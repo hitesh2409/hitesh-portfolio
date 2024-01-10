@@ -1,0 +1,141 @@
+// second-bg-color : #323946
+// txt-color : #fff
+// main-color :#0ef
+
+// header {
+//   display: grid;
+//   grid-template-columns: max-content auto;
+//   // height: 60px;
+//   align-items: center;
+//   justify-content: space-between;
+//   background-color: #1f242d;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   padding: 1rem;
+//   z-index: 1000;
+//   a {
+//     color: #fff;
+//   }
+
+//   .Logo {
+//     font-size: 1.8rem;
+//     font-weight: 600;
+//   }
+
+//   .Nav {
+//     display: grid;
+//     width: 100%;
+//     grid-template-columns: repeat(4, max-content);
+//     // justify-content: space-evenly;
+//     column-gap: 100px;
+
+//     @media screen and (max-width: 800px) {
+//       display: flex;
+//       flex-direction: column;
+//     }
+
+//     a {
+//       //   font-size: 1rem;
+//       font-weight: 600;
+//       transition: 0.5s;
+//       &:hover {
+//         color: #0ef;
+//       }
+//     }
+//     .Active {
+//       color: #0ef;
+//     }
+//   }
+
+//   // .NavVisible {
+//   //   display: flex;
+//   //   flex-direction: column;
+//   // }
+
+//   .Menu_Icon {
+//     display: none;
+//     font-size: 3rem;
+//     color: #fff;
+//     @media screen and (max-width: 800px) {
+//       display: block;
+//     }
+//   }
+// }
+
+header {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f242d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  a {
+    color: #fff;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 0 0.3rem;
+  }
+
+  .Logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .Nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 100px;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #1f242d;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    a {
+      font-weight: 600;
+      transition: 0.5s;
+      &:hover {
+        color: #0ef;
+      }
+    }
+
+    .Active {
+      color: #0ef;
+    }
+  }
+
+  .Menu_Icon {
+    display: none;
+    font-size: 3rem;
+    color: #fff;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+
+  .NavVisible {
+    display: flex;
+    @media screen and (max-width: 800px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      gap: 10px;
+      min-height: 100px;
+    }
+  }
+}
